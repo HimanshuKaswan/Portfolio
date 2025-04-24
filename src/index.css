@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@font-face{
+  font-family: anzo4;
+  src: url('./assets/file1.woff2')
+}
+
+@font-face{
+  font-family: anzo1;
+  src: url('./assets/file2.woff2')
+}
+
+@font-face{
+  font-family: anzo2;
+  src: url('./assets/file3.woff2')
+}
+
+
+html,
+body{
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  background-color: #111;
+}
+
+#page-in{
+  position: relative;
+  perspective: 100px;
+}
+
+#tiltDiv{
+  width: fit-content;
+  /* perspective: 100px; */
+}
