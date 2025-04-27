@@ -29,7 +29,10 @@ body{
   perspective: 100px;
 }
 
+#section2{
+  position: relative;
+  perspective: 3000px;}
+
 #tiltDiv{
   width: fit-content;
-  /* perspective: 100px; */
 }
