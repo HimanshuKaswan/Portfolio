@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fontsource/rajdhani": "^5.2.5",
     "@gsap/react": "^2.1.2",
     "@tailwindcss/vite": "^4.1.4",
     "autoprefixer": "^10.4.21",
+    "framer-motion": "^12.9.4",
     "gsap": "^3.12.7",
+    "orbitron": "^0.1.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

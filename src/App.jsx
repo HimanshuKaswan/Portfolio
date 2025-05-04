@@ -3,13 +3,11 @@ import HeroSection from './pages/HeroSection';
 import BigText from './pages/BigText'
 import Header from './components/Header';
 import About from './pages/About';
-import TheFocus from './pages/TheFocus';
-import Elegant from './pages/Elegant';
-import Mordern from './pages/Mordern';
-import Minimal from './pages/Minimal';
 import TheWorq from './pages/TheWorq';
-import Projects from './pages/Projects';
+import Projects from './pages/Projects.jsx';
 import Call from './pages/Call';
+import Experience from './pages/Experience';
+
 
 const App = () => {
   return (
@@ -18,10 +16,7 @@ const App = () => {
     <HeroSection />
     <BigText />
     <About />
-    <TheFocus />
-    <Elegant />
-    <Mordern />
-    <Minimal />
+    <Experience />
     <TheWorq />
     <Projects />
     <Call />

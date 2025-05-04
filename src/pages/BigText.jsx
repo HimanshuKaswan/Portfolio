@@ -259,7 +259,7 @@ const BigText = () =>{
                 </g>
                 </svg>
             </div>           
-            <div className='h-0.5 w-1/2 relative left-1/2 -translate-x-1/2 mt-5 bg-black'></div>  
+            <div className='h-0.5 w-1/2 relative rounded left-1/2 -translate-x-1/2 mt-5 bg-black'></div>  
         </div>
     )
 }
