@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @font-face{
   font-family: anzo4;
   src: url('./assets/file1.woff2')
@@ -16,10 +15,14 @@
   src: url('./assets/file3.woff2')
 }
 
+* {
+  box-sizing: border-box;
+}
 
 html,
 body{
   color: #fff;
+  overflow-x: hidden;
 }
 
 #page-in{
@@ -27,10 +30,11 @@ body{
   perspective: 100px;
 }
 
-#section2{
+#section2 {
   position: relative;
-  perspective: 3000px;}
+  perspective: 3000px;
+}
 
-#tiltDiv{
+#tiltDiv {
   width: fit-content;
 }
