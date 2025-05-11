@@ -6,24 +6,21 @@ const projects = [
     description: 'A web-based code editor that allows users to write, edit, and run code directly in the browser. Integrated with AI assistance, it helps generate and suggest code snippets to help users learn new technologies.',
     tech: ['MongoDB', 'Express','React','Node.js'],
     image: '/devin.png',
-    github: 'https://github.com/HimanshuKaswan/Drive',
-    live: 'https://drive-production-8cfe.up.railway.app/user/login',
+    github: 'https://github.com/HimanshuKaswan/Devin',
   },
   {
     title: 'Uber: Full-Stack MERN Application',
     description: 'A fully functional Uber clone built with the MERN stack. It includes user authentication, real-time ride booking, driver and rider dashboards, and location tracking, offering a seamless ride-sharing experience from end to end.',
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],
     image: '/uber.png',
-    github: 'https://github.com/yourname/task-manager',
-    live: 'https://yourtaskmanager.live',
+    github: 'https://github.com/HimanshuKaswan/uber',
   },
   {
     title: 'Uber-Inspired Microservices Architecture',
     description: "A backend-focused project exploring microservices architecture inspired by Uber's system design. It features independently deployable services for user management, ride requests, and payments.",
     tech: [ 'Node.js', 'MongoDB', 'Express'],
     image: '/micro.jpg',
-    github: 'https://github.com/yourname/task-manager',
-    live: 'https://yourtaskmanager.live',
+    github: 'https://github.com/HimanshuKaswan/uber-microservices',
   },
   {
     title: 'Employee Management System',
@@ -54,8 +51,8 @@ const projects = [
     description: 'A visually immersive gaming website built using Three.js, inspired by cyberpunk aesthetics. This project showcases interactive 3D elements, dynamic lighting, and animated scenes—designed to explore WebGL capabilities and creative storytelling through code.',
     tech: ['Three.js', 'JavaScript','Shaders (GLSL)', 'Post-processing libraries'],
     image: '/three.png',
-    github: 'https://github.com/HimanshuKaswan/Drive',
-    live: 'https://drive-production-8cfe.up.railway.app/user/login',
+    github: 'https://github.com/HimanshuKaswan/Cyberpunk',
+    live: 'https://cyberpunk-himanshus-projects-5c25892d.vercel.app/',
   },
 ];
 
@@ -94,14 +91,16 @@ const Projects = () => {
                 >
                   GitHub
                 </a>
-                <a
-                  href={project.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-purple-400 hover:text-purple-200 text-sm"
-                >
-                  Live Demo
-                </a>
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-purple-400 hover:text-purple-200 text-sm"
+                  >
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>
