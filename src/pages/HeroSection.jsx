@@ -27,7 +27,7 @@ const page1 = () => {
         <div id='page-in' onMouseMove={(e) => {
             mouseMoving(e)
         }} className='h-screen relative px-4 py-4 bg-white'>
-            <div className='shadow-xl relative p-18 shadow-gray-700 h-full w-full rounded-[40px] bg-cover bg-[url(https://static.wixstatic.com/media/f1c650_678c0ceab5194893872c60fa3be4bcdc~mv2.jpg/v1/fill/w_1863,h_891,fp_0.69_0.64,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ANZO.jpg)]'>
+            <div className='shadow-xl relative p-18 shadow-gray-700 h-full w-full rounded-[40px] bg-cover bg-[url(/hero.png)] bg-no-repeat bg-center'>
                 <img className='h-18 ' src="https://static.wixstatic.com/media/f1c650_e7181873180d410ba6848efd4e8cc5ef~mv2.png/v1/fill/w_75,h_60,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LOGO%20WHITE_edited.png" alt="" />   
                 <TiltText ref={tiltRef}/>
                 <Page1Bottom /> 

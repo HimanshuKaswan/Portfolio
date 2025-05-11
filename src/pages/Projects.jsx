@@ -2,38 +2,61 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Task Manager App',
-    description: 'A full-stack task manager with user authentication, CRUD operations, and real-time updates.',
+    title: 'Devin: AI-Powered Online Code Editor',
+    description: 'A web-based code editor that allows users to write, edit, and run code directly in the browser. Integrated with AI assistance, it helps generate and suggest code snippets to help users learn new technologies.',
+    tech: ['MongoDB', 'Express','React','Node.js'],
+    image: '/devin.png',
+    github: 'https://github.com/HimanshuKaswan/Drive',
+    live: 'https://drive-production-8cfe.up.railway.app/user/login',
+  },
+  {
+    title: 'Uber: Full-Stack MERN Application',
+    description: 'A fully functional Uber clone built with the MERN stack. It includes user authentication, real-time ride booking, driver and rider dashboards, and location tracking, offering a seamless ride-sharing experience from end to end.',
     tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHgXyMvIDs5DllS0EUmDXNkR3f8QcGZFigQ&s',
+    image: '/uber.png',
     github: 'https://github.com/yourname/task-manager',
     live: 'https://yourtaskmanager.live',
   },
   {
-    title: 'Portfolio Website',
-    description: 'This personal portfolio site built with Vite + React showcases my skills and projects.',
-    tech: ['Vite', 'React', 'TailwindCSS'],
-    image: 'https://repository-images.githubusercontent.com/616351992/41fb4d77-8bcc-4f2f-a5af-56c0e41e07c4',
-    github: 'https://github.com/yourname/portfolio',
-    live: 'https://yourportfolio.live',
-  },
-  {
-    title: 'Task Manager App',
-    description: 'A full-stack task manager with user authentication, CRUD operations, and real-time updates.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHgXyMvIDs5DllS0EUmDXNkR3f8QcGZFigQ&s',
+    title: 'Uber-Inspired Microservices Architecture',
+    description: "A backend-focused project exploring microservices architecture inspired by Uber's system design. It features independently deployable services for user management, ride requests, and payments.",
+    tech: [ 'Node.js', 'MongoDB', 'Express'],
+    image: '/micro.jpg',
     github: 'https://github.com/yourname/task-manager',
     live: 'https://yourtaskmanager.live',
   },
   {
-    title: 'Task Manager App',
-    description: 'A full-stack task manager with user authentication, CRUD operations, and real-time updates.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Express'],
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHHgXyMvIDs5DllS0EUmDXNkR3f8QcGZFigQ&s',
-    github: 'https://github.com/yourname/task-manager',
-    live: 'https://yourtaskmanager.live',
+    title: 'Employee Management System',
+    description: 'A React based web app that allows admins to manage employee records,handel tasks, and assign roles with secure login functionality.',
+    tech: ['React','TailwindCSS','JWT', 'Bcrypt'],
+    image: '/admin.png',
+    github: 'https://github.com/HimanshuKaswan/Ems',
+    live: 'https://ems-git-main-himanshus-projects-5c25892d.vercel.app/',
   },
-  // Add more project objects here
+  {
+    title: 'Drive: A Cloud Storage Solution',
+    description: 'A secure and scalable cloud drive application built with MongoDB, Express, and Node.js, enabling file upload, access, and management with RESTful APIs.',
+    tech: ['MongoDB', 'Express', 'Node.js'],
+    image: '/drive.png',
+    github: 'https://github.com/HimanshuKaswan/Drive',
+    live: 'https://drive-production-8cfe.up.railway.app/user/login',
+  },
+  {
+    title: 'React: Form Validation',
+    description: 'A lightweight React project demonstrating form validation techniques. It includes real-time input checks, error handling, and user-friendly feedback for improved usability.',
+    tech: ['React','TailwindCSS','JWT', 'Bcrypt'],
+    image: '/form.png',
+    github: 'https://github.com/HimanshuKaswan/FormValidation',
+    live: 'https://form-validation-himanshus-projects-5c25892d.vercel.app/',
+  },
+  {
+    title: 'Cyberpunk: Themed Gaming Website (Three.js)',
+    description: 'A visually immersive gaming website built using Three.js, inspired by cyberpunk aesthetics. This project showcases interactive 3D elements, dynamic lighting, and animated scenes—designed to explore WebGL capabilities and creative storytelling through code.',
+    tech: ['Three.js', 'JavaScript','Shaders (GLSL)', 'Post-processing libraries'],
+    image: '/three.png',
+    github: 'https://github.com/HimanshuKaswan/Drive',
+    live: 'https://drive-production-8cfe.up.railway.app/user/login',
+  },
 ];
 
 const Projects = () => {
@@ -62,7 +85,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
-              <div className="mt-4 flex justify-between gap-4">
+              <div className="bottom-0 mt-4 flex justify-between gap-4">
                 <a
                   href={project.github}
                   target="_blank"
